@@ -80,23 +80,23 @@ ul,ol,h1,h2,h3,h4,h5,h6,p {
 	border-bottom-left-radius: 0; 
 	-moz-border-radius-bottomleft: 0; 
 	-webkit-border-bottom-left-radius: 0; 
-	height: 44px; 
+	height: 48px; 
 	width: 100%; 
 	max-width: 640px; 
 }
 
 #w #pagebody header#toolbarnav h1 { 
 	text-align: center; 
-	padding-top: 10px; 
+	padding-top: 16px; 
 	padding-right: 40px; 
 	color: #e6e8f2; 
 	font-weight: bold; 
-	font-size: 2.1em; 
+	font-size: 16px; 
 	text-shadow: 1px 1px 0px #313131; 
 }
 
 
-#w #pagebody header #menu-btn { display: block; float: left; /* background-color: beige; */ width: 35px; height: 30px; /* background: url('') no-repeat; */ margin-top: 15px; margin-left: 15px; font-size: 18px;}
+#w #pagebody header #menu-btn { display: block; float: left; /* background-color: beige; */ width: 35px; height: 30px; /* background: url('') no-repeat; */ margin-top: 16px; margin-left: 15px; font-size: 16px;}
 
 .sidebar-toggle-box {
 	color: #fff;

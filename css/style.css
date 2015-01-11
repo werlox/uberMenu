@@ -140,7 +140,35 @@ font-family: "Droid Serif", Georgia, serif; font-size: 2.6em; line-height: 1.8em
 	transform: rotate(45deg);
 }
 
-#w #navmenu ul li a:hover::after { border-color: #cad0e6; }
+#w #navmenu ul li a:hover::after { 
+	border-color: #cad0e6; 
+}
+
+.item-box{
+	margin-bottom: 16px;
+}
+
+.item-img {
+	width: 60%;
+	min-height: 200px;
+	float:left;
+	background-color: blue;
+}
+
+.item-info {
+	width: 40%;
+	min-height: 200px;
+	float:right;
+	background-color: cyan;
+}
+
+.dir-left{
+	direction: ltr;
+}
+
+.dir-right {
+	direction: rtl;
+}
 
 /** @group misc **/
 .blue { color: #1c609f !important; font-weight: bold; }

@@ -62,19 +62,29 @@ ul,ol,h1,h2,h3,h4,h5,h6,p {
 }
 
 /** @group header **/
-#appBar { 
+#w #pagebody header#toolbarnav { 
 	display: block; 
 	position: fixed; 
 	left: 0px; 
 	top: 0px; 
 	z-index: 9999; 
-	background: #424242 url(''); 
-	height: 56px; 
+	background: #3b393a url('')    top left no-repeat; 
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	-o-border-radius: 5px; 
+	border-bottom-right-radius: 0; 
+	-moz-border-radius-bottomright: 0; 
+	-webkit-border-bottom-right-radius: 0; 
+	border-bottom-left-radius: 0; 
+	-moz-border-radius-bottomleft: 0; 
+	-webkit-border-bottom-left-radius: 0; 
+	height: 48px; 
 	width: 100%; 
 	max-width: 640px; 
 }
 
-#w #pagebody header#appBar h1 { 
+#w #pagebody header#toolbarnav h1 { 
 	text-align: center; 
 	padding-top: 16px; 
 	padding-right: 40px; 

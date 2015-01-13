@@ -103,9 +103,9 @@ ul,ol,h1,h2,h3,h4,h5,h6,p {
 }
 
 #w #pagebody #content { display: block; background: #fff; padding: 5px 12px; margin-top: 40px; min-height: 550px; height: 100%; z-index: 9999; }
-
+/*
 #w #pagebody #content h2 { border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; color: #181818;
-font-family: "Droid Serif", Georgia, serif; font-size: 2.6em; line-height: 1.8em; font-weight: 500; margin-top: 25px; margin-bottom: 25px; padding: 12px 0; text-align: center; }
+font-family: "Droid Serif", Georgia, serif; font-size: 2.6em; line-height: 1.8em; font-weight: 500; margin-top: 25px; margin-bottom: 25px; padding: 12px 0; text-align: center; } */
 #w #pagebody #content h3 { font-family: "Calibri", Verdana, Arial, sans-serif; font-weight: 700; font-size: 1.8em; line-height: 1.75em; text-transform: capitalize; margin-bottom: 5px; color: #222; }
 #w #pagebody #content p { font-size: 1.4em; line-height: 1.6em; margin-bottom: 15px; color: #444; }
 
@@ -144,30 +144,67 @@ font-family: "Droid Serif", Georgia, serif; font-size: 2.6em; line-height: 1.8em
 	border-color: #cad0e6; 
 }
 
+.thumb {
+	display: block;
+	text-align: right;
+}
+
 .item-box{
-	margin-bottom: 16px;
+	text-align: center;
+	display: block;
+	margin-top: 16px;
+	height: 380px;
 }
 
 .item-img {
-	width: 60%;
-	min-height: 200px;
+	text-align: center;
+	width: 70%;
+	height: 100%;
 	float:left;
-	background-color: blue;
 }
 
 .item-info {
-	width: 40%;
-	min-height: 200px;
+	margin-top: 10px;
+	text-align: right;
+	width: 30%;
+	height: 100%;
+	padding-right: 16px;
 	float:right;
-	background-color: cyan;
 }
 
-.dir-left{
+.price {
+	/* width: 100%; */
+	display:inline-block;
+	position: relative;
+	padding: 8px;
+	border: black solid 2px;
+	margin-top: 120px;
+	margin-left: 100%;
+	color: white;
+	background-color: black;
+	float: right;
+	font-size: 14px;
+}
+
+#btn-order {
+	display:inline-block;
+	position: relative;
+	padding: 8px;
+	border: black solid 2px;
+	margin-top: 10px;
+	float: right;
+	font-size: 14px;}
+
+.dir-lefts{
 	direction: ltr;
 }
 
-.dir-right {
+.dir-rights {
 	direction: rtl;
+}
+
+h2 {
+	
 }
 
 /** @group misc **/

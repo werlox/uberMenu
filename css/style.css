@@ -51,7 +51,7 @@ ul,ol,h1,h2,h3,h4,h5,h6,p {
 	z-index: 99999; }
 
 #w #navmenu { 
-	background: #475566; 
+	background: #39393b; 
 	height: 100%; 
 	display: block; 
 	position: fixed; 
@@ -68,8 +68,7 @@ ul,ol,h1,h2,h3,h4,h5,h6,p {
 	left: 0px; 
 	top: 0px; 
 	z-index: 9999; 
-	background: #0b1851 url('') 
-	top left no-repeat; 
+	background: #3b393a url('')    top left no-repeat; 
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px; 
@@ -102,7 +101,15 @@ ul,ol,h1,h2,h3,h4,h5,h6,p {
 	color: #fff;
 }
 
-#w #pagebody #content { display: block; background: #fff; padding: 5px 12px; margin-top: 40px; min-height: 550px; height: 100%; z-index: 9999; }
+#w #pagebody #content { 
+	display: block; 
+	background: #fff; 
+	padding: 5px 12px; 
+	margin-top: 40px; 
+	min-height: 550px; 
+	height: 100%; 
+	z-index: 9999; 
+	box-shadow: -5px -31px 32px #303030;}
 /*
 #w #pagebody #content h2 { border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; color: #181818;
 font-family: "Droid Serif", Georgia, serif; font-size: 2.6em; line-height: 1.8em; font-weight: 500; margin-top: 25px; margin-bottom: 25px; padding: 12px 0; text-align: center; } */
@@ -113,24 +120,42 @@ font-family: "Droid Serif", Georgia, serif; font-size: 2.6em; line-height: 1.8em
 #w #pagebody #content a:hover { color: #678eb2; }
 
 /** @group nav menu **/
-#w #navmenu header { display: block; background: #303a44; height: 44px; }
+#w #navmenu header { display: block; background: #39393b; height: 44px; }
 
 #w #navmenu header h1 { text-align: center; padding-top: 10px; color: #e6e8f2; font-weight: bold; font-size: 2.1em; text-shadow: 1px 1px 0px #313131; }
 
-#w #navmenu ul { list-style: none; background: #475566; height: 100%; }
+#w #navmenu ul { list-style: none; background: #39393b; height: 100%; }
 
-#w #navmenu ul li { display: block; }
-#w #navmenu ul li a { position: relative; display: block; border-bottom: 1px solid #303c4a; padding: 14px 11px; font-weight: bold; color: #f0f0f0; text-shadow: -1px -1px 1px #222; font-size: 1.6em; text-decoration: none; }
+#w #navmenu ul li { 
+	display: block; 
+}
 
-#w #navmenu ul li a:hover { color: #cad0e6; text-decoration: none; }
+#w #navmenu ul li:hover { 
+	background-color: #2b2d2c;
+}
+
+#w #navmenu ul li a { 
+	position: relative; 
+	display: block; 
+	border-bottom: 1px solid #303c4a; 
+	padding: 14px 11px; 
+	font-weight: 400; 
+	color: #d2241b; 
+	/* text-shadow: -1px -1px 1px #222; */ 
+	font-size: 18px; 
+	text-transform: uppercase; 
+	text-decoration: none; 
+	font-family:'Roboto', sans-serif;}
+
+#w #navmenu ul li a:hover { text-decoration: none; }
 
 #w #navmenu ul li a::after {
 	content: '';
 	display: block;
 	width: 6px;
 	height: 6px;
-	border-right: 3px solid #d0d0d8;
-	border-top: 3px solid #d0d0d8;
+	border-right: 3px solid #8F393B;
+	border-top: 3px solid #C33139;
 	position: absolute;
 	right: 30px;
 	top: 45%;
@@ -147,29 +172,36 @@ font-family: "Droid Serif", Georgia, serif; font-size: 2.6em; line-height: 1.8em
 .thumb {
 	display: block;
 	text-align: right;
+	max-width: 80%;      
+	height: auto;
 }
 
 .item-box{
+	box-shadow: 0px 0px 10px #DBDCDD;
 	text-align: center;
 	display: block;
 	margin-top: 16px;
-	height: 380px;
+	height: 347px;
 }
 
 .item-img {
+	/* position: absolute; */
 	text-align: center;
-	width: 70%;
-	height: 100%;
+	/* width: 70%; */
+	height: 139%;
 	float:left;
 }
 
 .item-info {
+	position: absolute;
+	right: 6px;
 	margin-top: 10px;
 	text-align: right;
-	width: 30%;
+	width: 184px;
 	height: 100%;
 	padding-right: 16px;
 	float:right;
+	z-index: 1000;
 }
 
 .price {
@@ -189,11 +221,30 @@ font-family: "Droid Serif", Georgia, serif; font-size: 2.6em; line-height: 1.8em
 #btn-order {
 	display:inline-block;
 	position: relative;
-	padding: 8px;
-	border: black solid 2px;
+	padding: 8px 16px 8px 16px;
+	border: #d62626 solid 2px;
+	font-weight: bold;
 	margin-top: 10px;
 	float: right;
-	font-size: 14px;}
+	font-size: 16px;
+	color: #d62626;
+	letter-spacing: 1px;
+	text-transform: uppercase;;
+	cursor: pointer;
+	transition: .5s;
+}
+
+#btn-order:hover {
+	color: white;
+	background-color: #d62626;
+	
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	/* ...and now for the proper property */
+	transition:.5s;
+}
 
 .dir-lefts{
 	direction: ltr;
@@ -212,7 +263,15 @@ h2 {
 
 /** @group clearfix **/
 .clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
-.clearfix { display: inline-block; }
+.clearfix { 
+	display: inline-block; 
+}
  
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+	#w #pagebody { 
+		max-width: 768px; 
+	}
+}
